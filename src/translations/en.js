@@ -3,6 +3,7 @@ const en = {
   Skills: "Skills",
   Works: "Works",
   Contacts: "Contacts",
+  ExpEdu: "Exp/Edu",
   Name: "Vlad",
   Surname: "Samoylyk",
   InfoTitle1: "Junior Front-end developer",
@@ -12,6 +13,18 @@ const en = {
     "Hello my name Vlad, and i interested in IT and everything in its orbit.",
   InfoText2:
     "3 yers ago i began to be fascinated by web programming, e.g. developing apps and building websites.",
+  Education: "Education",
+  Date1: " 09/2018 - PRESENT ",
+  Location1: " DROHOBYCH, UKRAINE",
+  University1: "Drohobych State Pedagogical University of Ivan Franko",
+  Specialities: "specialities: ",
+  SpecialitiesText1:
+    "Institute of Physics, Mathematics, Economy and Innovation Technologies",
+  Date2: "  09/2016 - 05/2018 ",
+  Location2: " KYIV, UKRAINE",
+  University2: "National Aviation University",
+  SpecialitiesText2:
+    "Faculty of Air Navigation, Electronics and Telecommunications",
 };
 
 export default en;

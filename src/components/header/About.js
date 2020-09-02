@@ -4,10 +4,11 @@ import "./style.scss";
 import Name from "./components/Name";
 import Info from "./components/Info";
 
-export default function About() {
+export default function About(props) {
+  const { scrollEduExp } = props;
   return (
     <div className="about">
-      <Header />
+      <Header scrollEduExp={scrollEduExp} />
       <div className="me">
         <Name />
         <Info />

@@ -4,12 +4,13 @@ import Logo from "./components/Logo";
 import NavBar from "./components/NavBar";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 function Header(props) {
+  const { scrollEduExp } = props;
   return (
     <div className="header">
       {/* <div className="left_header_row"> */}
       <div className="left_header">
         <Logo />
-        <NavBar />
+        <NavBar scrollEduExp={scrollEduExp} />
       </div>
       <LanguageSwitcher />
     </div>
