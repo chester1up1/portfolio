@@ -1,7 +1,8 @@
 .about {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   .header_column {
     width: 80%;
@@ -140,7 +141,7 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 2vw;
-
+    margin-bottom: 10vw;
     .left_header {
       display: flex;
       flex-direction: row;
@@ -155,7 +156,7 @@
         background-color: #f26c4e;
         color: #ffffff;
         width: 5%;
-        border-radius: 5px 5px 5px 2.5vw;
+        border-radius: 5px 2.5vw 5px 5px;
         -webkit-transition: -webkit-transform 0.8s ease-in-out;
         transition: 0.8s ease-in-out;
         .logo_c:hover {
@@ -254,6 +255,64 @@
       .active_p:hover {
         opacity: 0.8;
       }
+    }
+  }
+  .me {
+    width: 62%;
+    position: relative;
+    .name_box {
+      background-color: #f26c4e;
+      padding-left: 2vw;
+      border-radius: 0px 90px 0px 90px;
+      p {
+        color: #ffffff;
+        font-size: 6vw;
+        font-weight: bolder;
+        margin: 0px;
+        line-height: 6vw;
+      }
+      .sur_p {
+        padding-left: 10vw;
+      }
+    }
+    .info {
+      position: absolute;
+      width: 50%;
+      bottom: -100%;
+      right: -12vw;
+      background-color: #222222;
+      border-bottom: 2px solid #f26c4e;
+      border-right: 2px solid #f26c4e;
+      border-top: 2px solid #f26c4e;
+      height: 170%;
+
+      padding: 1vw;
+
+      .title {
+        color: #f26c4e;
+        font-size: 1vw;
+        text-align: start;
+        margin-bottom: 2px;
+      }
+      .text {
+        color: #ffffff;
+        font-size: 1.5vw;
+        text-align: start;
+      }
+    }
+    /* width */
+    .info::-webkit-scrollbar {
+      width: 0.7vw;
+    }
+
+    /* Track */
+    .info::-webkit-scrollbar-track {
+      background: #222222;
+    }
+
+    /* Handle */
+    .info::-webkit-scrollbar-thumb {
+      background: hsla(0, 0%, 100%, 0.1);
     }
   }
 }
