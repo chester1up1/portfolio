@@ -22,9 +22,17 @@ const ru = {
   SpecialitiesText1:
     "Институт Физики, Математики, Экономики и Инновационных технологий",
   Date2: "  09/2016 - 05/2018 ",
+  Date3: " 04/2019 - 06/2020 ",
+  Work: `Dro Free Dev (компания моего учителя по веб-программированию)`,
   Location2: " КИЕВ, УКРАИНА",
   University2: "Национальный Авиационный Университет",
   SpecialitiesText2: "Факультет Аэронавигации, Электроники и Телекоммуникаций",
+  Position: "должность: ",
+  SpecialitiesText3: "Front-end React JS разработчик",
+  Languages: "Языки",
+  Ukrainian: "Украинский",
+  Russian: "Русский",
+  English: "Английский",
 };
 
 export default ru;

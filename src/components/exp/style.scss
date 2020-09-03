@@ -10,6 +10,9 @@
     flex-direction: row;
     justify-content: center;
     justify-content: space-between;
+    .lang {
+      border-bottom: 1px #f26c4e solid;
+    }
     .edu {
       background-color: hsla(0, 0%, 100%, 0.103);
       width: 47%;
@@ -71,27 +74,32 @@
           display: flex;
           flex-direction: row;
           align-items: center;
+          .lang_text {
+            font-family: "Inconsolata", monospace;
+            text-transform: uppercase;
+          }
           p {
             margin-bottom: 0px;
             margin-right: 15px;
             font-size: 1.5vw;
             width: 30%;
             color: #ffffffb6;
+            font-weight: bold;
           }
           .range {
             width: 100%;
-            height: 10px;
+            height: 0.5vw;
             background-color: #ffffff56;
             .complete_100 {
               width: 100%;
-              height: 10px;
+              height: 0.5vw;
               background-color: #f26c4e;
               animation: complete_puls_1 infinite 10s linear;
             }
 
             .complete_50 {
               width: 70%;
-              height: 10px;
+              height: 0.5vw;
               // background-color: #f26c4e;
               // background: linear-gradient(-45deg, transparent 15px, #f26c4e 0);
               animation: complete_puls_1 infinite 10s linear;

@@ -28,8 +28,12 @@ const en = {
   Experience: "Experience",
   Date3: " 04/2019 - 06/2020 ",
   Work: `Dro Free Dev (my web-coding teacher's company)`,
-  Position: "position",
+  Position: "position: ",
   SpecialitiesText3: "Front-end React JS developer",
+  Languages: "Languages",
+  Ukrainian: "Ukrainian",
+  Russian: "Russian",
+  English: "English",
 };
 
 export default en;

@@ -22,9 +22,17 @@ const ua = {
   SpecialitiesText1:
     "Інститут Фізики, Математики, Економіки та Інноваційних технологій",
   Date2: "  09/2016 - 05/2018 ",
+  Date3: " 04/2019 - 06/2020 ",
+  Work: `Dro Free Dev (компанія мого вчителя з веб-програмування)`,
   Location2: " КИЇВ, УКРАЇНА",
   University2: "Національний Авіаційний Університет",
   SpecialitiesText2: "Факультет Аеронавігації, Електроніки та Телекомунікацій",
+  Position: "посада: ",
+  SpecialitiesText3: "Front-end React JS розробник",
+  Languages: "Мови",
+  Ukrainian: "Українська",
+  Russian: "Російська",
+  English: "Англійська",
 };
 
 export default ua;

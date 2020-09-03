@@ -11,7 +11,7 @@ export const Exp = () => {
   wow.init();
 
   return (
-    <div className="edu wow fadeInRightBig">
+    <div className="edu wow fadeInRightBig ">
       <div className="edu_header">
         <img src={case_} alt="case_" className="img_edu" />
         <p>
@@ -37,7 +37,7 @@ export const Exp = () => {
         <div className="specialities">
           <li>
             <span className="orange_span">
-              <Translate value="Position: " />
+              <Translate value="Position" />
             </span>
             <Translate value="SpecialitiesText3" />
           </li>
