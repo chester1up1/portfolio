@@ -4,9 +4,9 @@ import { Translate } from "react-redux-i18n";
 import { SetActive } from "../../../redux/actions/actions";
 
 function NavBar(props) {
-  const { SetActive, active, scrollEduExp } = props;
+  const { SetActive, active, scrollEduExp, scrollSkills } = props;
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
-  const executeScroll = () => scrollToRef(scrollEduExp);
+  const executeScroll = (i) => scrollToRef(i);
   return (
     <div className="navBar animate__animated animate__fadeInDown">
       <ul>
@@ -19,13 +19,14 @@ function NavBar(props) {
         <li
           className={active == "exp" ? "li_active" : ""}
           onClick={() => SetActive("exp")}
-          onClick={executeScroll}
+          onClick={() => executeScroll(scrollEduExp)}
         >
           <Translate value="ExpEdu" />
         </li>
         <li
           className={active == "skills" ? "li_active" : ""}
           onClick={() => SetActive("skills")}
+          onClick={() => executeScroll(scrollSkills)}
         >
           <Translate value="Skills" />
         </li>

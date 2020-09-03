@@ -33,6 +33,9 @@ const ua = {
   Ukrainian: "Українська",
   Russian: "Російська",
   English: "Англійська",
+  Skills: "Навички",
+  Main: "Основні:",
+  Secondary: "Вторинні:",
 };
 
 export default ua;

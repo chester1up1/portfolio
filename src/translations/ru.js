@@ -33,6 +33,9 @@ const ru = {
   Ukrainian: "Украинский",
   Russian: "Русский",
   English: "Английский",
+  Skills: "Навыки",
+  Main: "Основные:",
+  Secondary: "Вторичные:",
 };
 
 export default ru;

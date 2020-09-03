@@ -4,17 +4,22 @@ import About from "../header/About";
 import { PropTypes } from "prop-types";
 import { getDir } from "../../redux/selectors/i18n";
 import ExpEdu from "../exp/ExpEdu";
+import Skills from "../skills/Skills";
 
 export const Main = (props) => {
+  const scrollAbout = useRef(null);
   const scrollEduExp = useRef(null);
+  const scrollSkills = useRef(null);
+
   const { dir } = props;
   useEffect(() => {
     document.dir = dir === "ar" ? "rtl" : "ltr";
   }, [dir]);
   return (
     <div className="App">
-      <About scrollEduExp={scrollEduExp} />
+      <About scrollEduExp={scrollEduExp} scrollSkills={scrollSkills} />
       <ExpEdu scrollEduExp={scrollEduExp} />
+      <Skills scrollSkills={scrollSkills} />
     </div>
   );
 };

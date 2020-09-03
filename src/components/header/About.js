@@ -5,10 +5,10 @@ import Name from "./components/Name";
 import Info from "./components/Info";
 
 export default function About(props) {
-  const { scrollEduExp } = props;
+  const { scrollEduExp, scrollSkills } = props;
   return (
     <div className="about">
-      <Header scrollEduExp={scrollEduExp} />
+      <Header scrollEduExp={scrollEduExp} scrollSkills={scrollSkills} />
       <div className="me">
         <Name />
         <Info />

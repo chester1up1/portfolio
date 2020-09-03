@@ -34,6 +34,9 @@ const en = {
   Ukrainian: "Ukrainian",
   Russian: "Russian",
   English: "English",
+  Skills: "Skills",
+  Main: "Main:",
+  Secondary: "Secondary:",
 };
 
 export default en;
