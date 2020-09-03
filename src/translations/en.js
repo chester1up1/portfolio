@@ -25,6 +25,11 @@ const en = {
   University2: "National Aviation University",
   SpecialitiesText2:
     "Faculty of Air Navigation, Electronics and Telecommunications",
+  Experience: "Experience",
+  Date3: " 04/2019 - 06/2020 ",
+  Work: `Dro Free Dev (my web-coding teacher's company)`,
+  Position: "position",
+  SpecialitiesText3: "Front-end React JS developer",
 };
 
 export default en;

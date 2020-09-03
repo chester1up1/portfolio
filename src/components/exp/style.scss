@@ -6,9 +6,13 @@
   margin-bottom: 25vw;
   .expeduBox {
     width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
     .edu {
       background-color: hsla(0, 0%, 100%, 0.103);
-      width: 50%;
+      width: 47%;
       padding: 5px;
       .edu_header {
         display: flex;
@@ -24,6 +28,75 @@
           margin-bottom: 0px;
           font-size: 1.3vw;
           font-weight: bolder;
+        }
+      }
+      .edu_info_lang {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 12vw;
+
+        .edu_info_header {
+          font-family: "Inconsolata", monospace;
+          img {
+            width: 5%;
+          }
+          p {
+            display: inline;
+            font-size: 1.3vw;
+            color: #ffffffb6;
+          }
+        }
+        .university {
+          p {
+            color: #ffffff;
+            font-weight: bolder;
+            font-size: 1.7vw;
+          }
+        }
+        .specialities {
+          padding-bottom: 1vw;
+          margin-bottom: 1vw;
+          border-bottom: 1px #f26c4e solid;
+          li {
+            color: #ffffffb6;
+            font-size: 1.5vw;
+            .orange_span {
+              color: #f26c4e;
+              font-weight: bold;
+            }
+          }
+        }
+        .language {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          p {
+            margin-bottom: 0px;
+            margin-right: 15px;
+            font-size: 1.5vw;
+            width: 30%;
+            color: #ffffffb6;
+          }
+          .range {
+            width: 100%;
+            height: 10px;
+            background-color: #ffffff56;
+            .complete_100 {
+              width: 100%;
+              height: 10px;
+              background-color: #f26c4e;
+              animation: complete_puls_1 infinite 10s linear;
+            }
+
+            .complete_50 {
+              width: 70%;
+              height: 10px;
+              // background-color: #f26c4e;
+              // background: linear-gradient(-45deg, transparent 15px, #f26c4e 0);
+              animation: complete_puls_1 infinite 10s linear;
+            }
+          }
         }
       }
       .edu_info {
@@ -55,6 +128,51 @@
             .orange_span {
               color: #f26c4e;
               font-weight: bold;
+            }
+          }
+        }
+        .language {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          p {
+            margin-bottom: 0px;
+            margin-right: 15px;
+            font-size: 1.5vw;
+            width: 30%;
+            color: #ffffffb6;
+          }
+          .range {
+            width: 100%;
+            height: 10px;
+            background-color: #ffffff56;
+            .complete_100 {
+              width: 100%;
+              height: 10px;
+              background-color: #f26c4e;
+              animation: complete_puls_1 infinite 10s linear;
+            }
+            @keyframes complete_puls_1 {
+              0% {
+                background-color: #f26c4e;
+              }
+              33% {
+                background-color: #7a4ef2;
+              }
+              66% {
+                background-color: #f24ed7;
+              }
+              100% {
+                background-color: #f26c4e;
+              }
+            }
+
+            .complete_50 {
+              width: 70%;
+              height: 10px;
+              // background-color: #f26c4e;
+              // background: linear-gradient(-45deg, transparent 15px, #f26c4e 0);
+              animation: complete_puls_1 infinite 10s linear;
             }
           }
         }
