@@ -5,6 +5,7 @@ import { PropTypes } from "prop-types";
 import { getDir } from "../../redux/selectors/i18n";
 import ExpEdu from "../exp/ExpEdu";
 import Skills from "../skills/Skills";
+import Works from "../works/Works";
 
 export const Main = (props) => {
   const scrollAbout = useRef(null);
@@ -20,6 +21,7 @@ export const Main = (props) => {
       <About scrollEduExp={scrollEduExp} scrollSkills={scrollSkills} />
       <ExpEdu scrollEduExp={scrollEduExp} />
       <Skills scrollSkills={scrollSkills} />
+      <Works />
     </div>
   );
 };

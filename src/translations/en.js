@@ -36,7 +36,21 @@ const en = {
   English: "English",
   Skills: "Skills",
   Main: "Main:",
+  Work_Name: "Name:",
+  Info: "Some info:",
   Secondary: "Secondary:",
+  NameWork1: "Project Tasks",
+  WorkInfo1: `Web app created to help users adjust easily task management. When i
+  created app, i tried to do adaptive layout. This is my last course
+  work! (do not judge strictly)`,
+  NameWork2: "House landing",
+  WorkInfo2: `A web page whose main purpose is to showcase living quarters, apartments and houses. On the web page, the user can find basic information about the provided residential complexes. (not my design)`,
+  NameWork3: "PhotoG",
+  WorkInfo3: `A website that allows the user to upload and delete and view photos. Personal simplified photo gallery built with Firbase, React and Redux.`,
+  NameWork4: `Sponsor carousel`,
+  WorkInfo4: `My first Twitch extension was a clickable live stream slider. With loading images, their size and position settings.`,
+  NameWork5: `D2TwitchEx`,
+  WorkInfo5: `Twitch Extension for watching esports tournaments, which will provide viewers with information about the current match, data about teams, players and the tournament as a whole. The extension was created while participating in Universal Sports & Games Hackathon.`,
 };
 
 export default en;
