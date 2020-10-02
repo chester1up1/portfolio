@@ -6,6 +6,7 @@ import { getDir } from "../../redux/selectors/i18n";
 import ExpEdu from "../exp/ExpEdu";
 import Skills from "../skills/Skills";
 import Works from "../works/Works";
+import SecretPlace from "../secretPlace/SecretPlace";
 
 export const Main = (props) => {
   const scrollAbout = useRef(null);
@@ -22,6 +23,7 @@ export const Main = (props) => {
       <ExpEdu scrollEduExp={scrollEduExp} />
       <Skills scrollSkills={scrollSkills} />
       <Works />
+      <SecretPlace />
     </div>
   );
 };

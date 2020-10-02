@@ -51,6 +51,9 @@ const en = {
   WorkInfo4: `My first Twitch extension was a clickable live stream slider. With loading images, their size and position settings.`,
   NameWork5: `D2TwitchEx`,
   WorkInfo5: `Twitch Extension for watching esports tournaments, which will provide viewers with information about the current match, data about teams, players and the tournament as a whole. The extension was created while participating in Universal Sports & Games Hackathon.`,
+  Fact1: `I've been playing basketball since I was 12`,
+  Fact2: `I was a Universal Sports & Games Hackathon finalist`,
+  FactNone: `All the facts are sold, maybe next time!`,
 };
 
 export default en;
