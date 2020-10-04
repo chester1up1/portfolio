@@ -4,7 +4,14 @@ import { Translate } from "react-redux-i18n";
 import { SetActive } from "../../../redux/actions/actions";
 
 function NavBar(props) {
-  const { SetActive, active, scrollEduExp, scrollSkills } = props;
+  const {
+    SetActive,
+    active,
+    scrollEduExp,
+    scrollSkills,
+    scrollWorks,
+    scrollContacts,
+  } = props;
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
   const executeScroll = (i) => scrollToRef(i);
   return (
@@ -33,12 +40,14 @@ function NavBar(props) {
         <li
           className={active == "works" ? "li_active" : ""}
           onClick={() => SetActive("works")}
+          onClick={() => executeScroll(scrollWorks)}
         >
           <Translate value="Works" />
         </li>
         <li
           className={active == "contacts" ? "li_active" : ""}
           onClick={() => SetActive("contacts")}
+          onClick={() => executeScroll(scrollContacts)}
         >
           <Translate value="Contacts" />
         </li>

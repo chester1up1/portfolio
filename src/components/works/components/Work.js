@@ -56,8 +56,9 @@ export const Work = (props) => {
             <a href={url} target="_blank">
               <div className="link">
                 <img src={eye} alt="eye" />
-
-                <p>preview</p>
+                <p>
+                  <Translate value="Preview" />
+                </p>
               </div>
             </a>
           ) : (
@@ -67,7 +68,13 @@ export const Work = (props) => {
               </div>
             </a>
           )}
-          {url == "" && git == "" ? <p className="com">coming soon...</p> : ""}
+          {url == "" && git == "" ? (
+            <p className="com">
+              <Translate value="coming_soon" />
+            </p>
+          ) : (
+            ""
+          )}
         </div>
       </div>
       <div className="work_img">

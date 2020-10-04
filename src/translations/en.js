@@ -7,12 +7,12 @@ const en = {
   Name: "Vlad",
   Surname: "Samoylyk",
   InfoTitle1: "Junior Front-end developer",
-  InfoTitle2: "Yers old: 21",
+  InfoTitle2: "Years old: 21",
   InfoTitle3: "Main technology: React JS",
   InfoText1:
     "Hello my name Vlad, and i interested in IT and everything in its orbit.",
   InfoText2:
-    "3 yers ago i began to be fascinated by web programming, e.g. developing apps and building websites.",
+    "3 years  ago i began to be fascinated by web programming, e.g. developing apps and building websites.",
   Education: "Education",
   Date1: " 09/2018 - PRESENT ",
   Location1: " DROHOBYCH, UKRAINE",
@@ -46,7 +46,7 @@ const en = {
   NameWork2: "House landing",
   WorkInfo2: `A web page whose main purpose is to showcase living quarters, apartments and houses. On the web page, the user can find basic information about the provided residential complexes. (not my design)`,
   NameWork3: "PhotoG",
-  WorkInfo3: `A website that allows the user to upload and delete and view photos. Personal simplified photo gallery built with Firbase, React and Redux.`,
+  WorkInfo3: `A website that allows the user to upload, delete and view photos. Personal simplified photo gallery built with Firbase, React and Redux.`,
   NameWork4: `Sponsor carousel`,
   WorkInfo4: `My first Twitch extension was a clickable live stream slider. With loading images, their size and position settings.`,
   NameWork5: `D2TwitchEx`,
@@ -54,6 +54,17 @@ const en = {
   Fact1: `I've been playing basketball since I was 12`,
   Fact2: `I was a Universal Sports & Games Hackathon finalist`,
   FactNone: `All the facts are sold, maybe next time!`,
+  Preview: "viewing",
+  coming_soon: "coming soon...",
+  Secret_Place: "Secret Shop",
+  Buy: "Buy",
+  usl: "some useless fact about me",
+  sale: "SALE",
+  Just: "Just",
+  buy_btn: "BUY",
+  here: "Click here!",
+  sec: "sec left",
+  where: "Ukraine, Lviv oblast (province), city Drohobych",
 };
 
 export default en;

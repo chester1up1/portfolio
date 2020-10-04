@@ -3,9 +3,10 @@ import { connect } from "react-redux";
 import Work from "./components/Work";
 import { data } from "./data";
 import "./style.scss";
-export const Works = () => {
+export const Works = (props) => {
+  const { scrollWorks } = props;
   return (
-    <div className="works">
+    <div className="works" ref={scrollWorks}>
       {data.map((item) => (
         <Work
           name={`NameWork${item.id}`}

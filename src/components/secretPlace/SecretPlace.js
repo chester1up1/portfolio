@@ -3,13 +3,19 @@ import { connect } from "react-redux";
 import "./style.scss";
 import { TimeTik, GetGold, BuyTheSecret } from "./actions";
 import { Translate } from "react-redux-i18n";
-
+import WOW from "wow.js";
+import { Spinner } from "reactstrap";
 export const SecretPlace = (props) => {
   const { TimeTik, GetGold, time, gold, BuyTheSecret } = props;
   const [Click, setClick] = useState(true);
   const [Facts, setFacts] = useState([1, 2]);
   const [Fact, setFact] = useState("");
   const [error, setError] = useState(false);
+  const [load, setload] = useState(false);
+  useEffect(() => {
+    const wow = new WOW();
+    wow.init();
+  }, []);
   useEffect(() => {
     if (time == 5) {
       setClick(true);
@@ -39,11 +45,15 @@ export const SecretPlace = (props) => {
   const BuyFact = () => {
     if (gold == 100) {
       if (Facts.length !== 0) {
+        setload(false);
         let i = Math.floor(Math.random() * Facts.length);
         let item = Facts[i];
         setFacts(Facts.filter((item) => item !== Facts[i]));
         setFact(item);
         BuyTheSecret();
+        setTimeout(() => {
+          setload(true);
+        }, 1500);
       } else {
         setFact("None");
       }
@@ -52,31 +62,41 @@ export const SecretPlace = (props) => {
     }
   };
   return (
-    <div className="SecretPlace">
+    <div className="SecretPlace wow fadeInRightBig">
       <div className="title">
         <p>
-          <i>Secret Place</i>
+          <i>
+            <Translate value="Secret_Place" />
+          </i>
         </p>
       </div>
       <div className="secret_place_box">
         <div className="info">
           {Fact == "" ? (
             <p>
-              <span>Buy</span> some useless fact about me,{" "}
+              <p className="span_">
+                <Translate value="Buy" />
+              </p>
+              <Translate value="usl" />,{" "}
               <p className="sale">
-                SALE <span>-99%</span> !{" "}
-              </p>{" "}
+                <Translate value="sale" /> <span>{`-99% ` + " "}</span>{" "}
+              </p>
               <p className="price">
-                {" "}
-                Just <i className="sapn">100 {`(c)`} !</i>
+                <Translate value="Just" /> <i className="sapn">100 {`(c)`} !</i>
               </p>
             </p>
+          ) : !load ? (
+            <div className="sp">
+              <Spinner color="danger" />
+            </div>
           ) : (
-            <Translate value={`Fact${Fact}`} />
+            <p className="fact">
+              <Translate value={`Fact${Fact}`} />
+            </p>
           )}
 
           <div className="btn" onClick={BuyFact}>
-            BUY
+            <Translate value="buy_btn" className="span" />
           </div>
         </div>
         <div className="btn_box">
@@ -111,7 +131,14 @@ export const SecretPlace = (props) => {
             </div>
           </div>
           <p className="time">
-            {time == 5 ? "Click here!" : `${5 - time} sec left`}
+            {time == 5 ? (
+              <Translate value="here" />
+            ) : (
+              <span>
+                {`${5 - time} `}
+                <Translate value="sec" />
+              </span>
+            )}
           </p>
           <div className="bot">
             <p>
